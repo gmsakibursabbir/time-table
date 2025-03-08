@@ -1,135 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ramadan Daily Routine</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
-    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
-    th { background-color: #f2f2f2; }
-    caption { font-size: 1.5em; margin: 10px 0; font-weight: bold; }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold text-center mb-6">Ramadan Daily Routine</h1>
 
-  <table>
-    <caption>Weekday Routine (Monday – Saturday)</caption>
-    <tr>
-      <th>Time</th>
-      <th>Activity</th>
-    </tr>
-    <tr>
-      <td>4:30 – 6:00 am</td>
-      <td>
-        <strong>Pre-Dawn:</strong><br>
-        - Suhoor: Nutritious meal (oatmeal, whole-grain bread with eggs, yogurt, water)<br>
-        - Fajr prayer & Quran reading/dhikr<br>
-        - Light exercise (stretching/yoga) and brief study (optional)<br>
-        - Option to return to sleep or quiet reflection
-      </td>
-    </tr>
-    <tr>
-      <td>8:30 – 9:30 am</td>
-      <td>
-        <strong>Morning Preparation:</strong><br>
-        - Wake up (if rested from a nap) and prepare for the day<br>
-        - Brief review of work tasks and plan mini study sessions
-      </td>
-    </tr>
-    <tr>
-      <td>10:00 am – 9:00 pm</td>
-      <td>
-        <strong>Work from Home:</strong><br>
-        - Begin work<br>
-        - 11:00 am: 1-hour Exam Coaching for the failed subject<br>
-        - Take 5–10 minute breaks hourly; use a break (10–15 minutes) for a quick video lesson review (accumulate extra study hours during the day)
-      </td>
-    </tr>
-    <tr>
-      <td>7:00 – 7:30 pm</td>
-      <td>
-        <strong>Iftar:</strong><br>
-        - Break the fast with dates and water<br>
-        - Enjoy a balanced meal (lean protein, vegetables, whole grains)
-      </td>
-    </tr>
-    <tr>
-      <td>7:30 – 7:45 pm</td>
-      <td>
-        <strong>Maghrib Prayer:</strong><br>
-        - Engage in spiritual reflection
-      </td>
-    </tr>
-    <tr>
-      <td>7:45 – 9:00 pm</td>
-      <td>
-        <strong>Work Resumes:</strong><br>
-        - Return to work until the designated end time
-      </td>
-    </tr>
-    <tr>
-      <td>9:00 – 11:00 pm</td>
-      <td>
-        <strong>Main Study Session:</strong><br>
-        - Dedicate 2 hours (or split into segments) for video courses and practice to reach 6–8 hours daily
-      </td>
-    </tr>
-    <tr>
-      <td>11:00 – 12:00 am</td>
-      <td>
-        <strong>Evening Spiritual & Exercise:</strong><br>
-        - Isha prayer and, if possible, Taraweeh<br>
-        - 20–30 minute home workout (bodyweight exercises, brisk walking, or yoga)<br>
-        - Wind down for sleep
-      </td>
-    </tr>
-  </table>
+    <!-- Weekday Routine -->
+    <div class="overflow-x-auto mb-8">
+      <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+        <caption class="text-xl font-semibold p-4 bg-blue-100">Weekday Routine (Monday – Saturday)</caption>
+        <thead class="bg-blue-200">
+          <tr>
+            <th class="px-4 py-2 text-left">Time</th>
+            <th class="px-4 py-2 text-left">Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="px-4 py-2 font-medium">4:30 – 6:00 am</td>
+            <td class="px-4 py-2">
+              <strong>Pre-Dawn:</strong>
+              <ul class="list-disc list-inside">
+                <li>Suhoor: Nutritious meal (oatmeal, whole-grain bread with eggs, yogurt, water)</li>
+                <li>Fajr prayer & Quran reading/dhikr</li>
+                <li>Light exercise (stretching/yoga) and optional brief study</li>
+                <li>Option to rest or reflect</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="border-t bg-gray-50">
+            <td class="px-4 py-2 font-medium">8:30 – 9:30 am</td>
+            <td class="px-4 py-2">
+              <strong>Morning Preparation:</strong>
+              <ul class="list-disc list-inside">
+                <li>Wake up (if rested) and prepare for the day</li>
+                <li>Review work tasks and plan mini study sessions</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-4 py-2 font-medium">10:00 am – 9:00 pm</td>
+            <td class="px-4 py-2">
+              <strong>Work from Home:</strong>
+              <ul class="list-disc list-inside">
+                <li>Start work</li>
+                <li>11:00 am: 1-hour Exam Coaching session</li>
+                <li>Take 5–10 minute breaks hourly (use one break for a 10–15 minute video lesson review)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="border-t bg-gray-50">
+            <td class="px-4 py-2 font-medium">7:00 – 7:30 pm</td>
+            <td class="px-4 py-2">
+              <strong>Iftar:</strong>
+              <ul class="list-disc list-inside">
+                <li>Break fast with dates and water</li>
+                <li>Balanced meal (lean protein, vegetables, whole grains)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-4 py-2 font-medium">7:30 – 7:45 pm</td>
+            <td class="px-4 py-2">
+              <strong>Maghrib Prayer:</strong>
+              <p>Engage in spiritual reflection</p>
+            </td>
+          </tr>
+          <tr class="border-t bg-gray-50">
+            <td class="px-4 py-2 font-medium">7:45 – 9:00 pm</td>
+            <td class="px-4 py-2">
+              <strong>Work Resumes:</strong>
+              <p>Return to work until the end of the day</p>
+            </td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-4 py-2 font-medium">9:00 – 11:00 pm</td>
+            <td class="px-4 py-2">
+              <strong>Main Study Session:</strong>
+              <p>Dedicate 2 hours (or split into segments) for video courses and practice to reach 6–8 hours daily</p>
+            </td>
+          </tr>
+          <tr class="border-t bg-gray-50">
+            <td class="px-4 py-2 font-medium">11:00 – 12:00 am</td>
+            <td class="px-4 py-2">
+              <strong>Evening Spiritual & Exercise:</strong>
+              <ul class="list-disc list-inside">
+                <li>Isha prayer and, if possible, Taraweeh</li>
+                <li>20–30 minute home workout (bodyweight exercises, brisk walking, or yoga)</li>
+                <li>Wind down for sleep</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <table>
-    <caption>Sunday Routine (Weekend Variation – No Work)</caption>
-    <tr>
-      <th>Time</th>
-      <th>Activity</th>
-    </tr>
-    <tr>
-      <td>Flexible Morning</td>
-      <td>
-        <strong>Morning Routine:</strong><br>
-        - Relaxed Suhoor (or healthy breakfast if not fasting)<br>
-        - Fajr prayer and quiet reflection<br>
-        - Extended study session: 2–3 hours of video courses and practice<br>
-        - Light exercise: Walk, yoga, or other activity for 30–60 minutes
-      </td>
-    </tr>
-    <tr>
-      <td>Afternoon</td>
-      <td>
-        <strong>Afternoon Session:</strong><br>
-        - Another study block: 2–3 hours of focused learning<br>
-        - Enjoy a light, balanced lunch (salad, lean protein, whole grains)<br>
-        - Spiritual or leisure time: Reading, extra prayers/dhikr, or personal reflection
-      </td>
-    </tr>
-    <tr>
-      <td>Evening</td>
-      <td>
-        <strong>Evening Routine:</strong><br>
-        - Iftar with dates, water, and a balanced meal<br>
-        - Maghrib and Isha prayers (Taraweeh if attending)<br>
-        - Optional short review session (30 minutes) or light workout<br>
-        - Relax and unwind with a hobby or leisure activity
-      </td>
-    </tr>
-  </table>
+    <!-- Sunday Routine -->
+    <div class="overflow-x-auto mb-8">
+      <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+        <caption class="text-xl font-semibold p-4 bg-green-100">Sunday Routine (Weekend Variation – No Work)</caption>
+        <thead class="bg-green-200">
+          <tr>
+            <th class="px-4 py-2 text-left">Time</th>
+            <th class="px-4 py-2 text-left">Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="px-4 py-2 font-medium">Flexible Morning</td>
+            <td class="px-4 py-2">
+              <strong>Morning Routine:</strong>
+              <ul class="list-disc list-inside">
+                <li>Relaxed Suhoor (or healthy breakfast if not fasting)</li>
+                <li>Fajr prayer and quiet reflection</li>
+                <li>Extended study session: 2–3 hours of video courses and practice</li>
+                <li>Light exercise: Walk, yoga, or another activity for 30–60 minutes</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="border-t bg-gray-50">
+            <td class="px-4 py-2 font-medium">Afternoon</td>
+            <td class="px-4 py-2">
+              <strong>Afternoon Session:</strong>
+              <ul class="list-disc list-inside">
+                <li>Another study block: 2–3 hours of focused learning</li>
+                <li>Light, balanced lunch (salad, lean protein, whole grains)</li>
+                <li>Spiritual or leisure time: Reading, extra prayers/dhikr, or personal reflection</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-4 py-2 font-medium">Evening</td>
+            <td class="px-4 py-2">
+              <strong>Evening Routine:</strong>
+              <ul class="list-disc list-inside">
+                <li>Iftar with dates, water, and a balanced meal</li>
+                <li>Maghrib and Isha prayers (with Taraweeh if attending)</li>
+                <li>Optional short review session (30 minutes) or light workout</li>
+                <li>Relax and unwind with a hobby or leisure activity</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <h2>Additional Recommendations</h2>
-  <ul>
-    <li><strong>Food & Hydration:</strong> Focus on balanced meals rich in fiber, protein, and complex carbs. Drink plenty of water during non-fasting hours and limit caffeine.</li>
-    <li><strong>Exercise & Weight Loss:</strong> Incorporate short bursts of exercise throughout the day along with a dedicated workout session in the evening.</li>
-    <li><strong>Spiritual Activities:</strong> Maintain your daily prayers, extra Quran reading, and dhikr. Consider keeping a journal to track both spiritual and study progress.</li>
-    <li><strong>Breaks & Naps:</strong> Short breaks and power naps (20–30 minutes) can help sustain energy levels.</li>
-  </ul>
-
+    <!-- Additional Recommendations -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Additional Recommendations</h2>
+      <ul class="list-disc list-inside">
+        <li><strong>Food & Hydration:</strong> Focus on balanced meals rich in fiber, protein, and complex carbs. Drink plenty of water during non-fasting hours and limit caffeine.</li>
+        <li><strong>Exercise & Weight Loss:</strong> Incorporate short bursts of exercise throughout the day along with a dedicated workout session in the evening.</li>
+        <li><strong>Spiritual Activities:</strong> Maintain daily prayers, extra Quran reading, and dhikr. Consider keeping a journal to track spiritual and study progress.</li>
+        <li><strong>Breaks & Naps:</strong> Short breaks and power naps (20–30 minutes) can help sustain energy levels.</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
